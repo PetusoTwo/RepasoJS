@@ -71,4 +71,4 @@ El repositorio está organizado en las siguientes carpetas:
 1. Clona el repositorio en tu máquina local usando el siguiente comando:
 
    ```bash
-   git clone https://github.com/tu-usuario/repaso-javascript.git
+   git clone https://github.com/PetusoTwo/RepasoJS.git
