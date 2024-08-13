@@ -1,0 +1,59 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    background: rgb(28, 2, 2);
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: justify;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    color: white;
+    padding: 10px;
+}
+
+/* Estilo para el logo dentro de la barra de navegación */
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; 
+}
+
+/* Estilo para el contenedor de título y logo */
+.container {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* Estilo para los enlaces dentro de la barra de navegación */
+.links {
+    display: flex;
+    align-items: center; 
+    list-style: none;
+    margin: 0; 
+}
+
+/* Estilo para los elementos de lista dentro de los enlaces */
+.links li {
+    margin: 0 10px; 
+}
+
+/* Estilo para los enlaces dentro de los elementos de lista */
+.links a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 20px; 
+}
