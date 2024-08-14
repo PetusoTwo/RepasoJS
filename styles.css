@@ -115,13 +115,13 @@ input[value="4"]:checked ~ * [data-scene]:not([data-scene="4"]) {
     transform: translateX(-25%);
 }
 
-/* Muestra y mueve los elementos correspondientes cuando el input está seleccionado */
+/* Muestra y mueve los elementos correspondientes cuando el input está seleccionado
 input[value="1"]:checked ~ * [data-scene="1"],
 input[value="2"]:checked ~ * [data-scene="2"],
 input[value="3"]:checked ~ * [data-scene="3"],
 input[value="4"]:checked ~ * [data-scene="4"] {
     transform: translateX(25%);
-}
+} */
 
 /* Estilo para las capas */
 .layer {
@@ -141,34 +141,36 @@ input[value="4"]:checked ~ * [data-scene="4"] {
     background-size: cover;
     background-position: center 20%;
     overflow: hidden;
+    height: 300px;
 }
 
 /* Estilo para el texto del paisaje */
 .landscape-text {
     display: inline-block;
-    font-size: 40vh;
+    font-size: 25vh;
     font-weight: bold;
     background: inherit;
     background-image: url('');
     background-clip: text;
     -webkit-background-clip: text;
     background-size: 160% auto;
-    background-position: calc(80% + ( -70% * (var(--scene) / var(--total)))) 0;
     color: transparent;
-    transform: translateX(calc(40% + (-100% * (var(--scene) / var(--total)))));
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 /* Estilo para el lado izquierdo */
 .left-side {
-    grid-row: 1 / 2;
+    grid-row: 1 / 1;
     grid-column: 2 / 3;
     font-family: 'Oswald';
-    align-self: end;
 }
 
-/* Estilo para los números de página */
+/* Estilo para los números de página
 .page-numbers {
-    color: white;
+    color: rgb(255, 255, 255);
     overflow: hidden;
 }
 
@@ -181,12 +183,12 @@ input[value="4"]:checked ~ * [data-scene="4"] {
 }
 
 /* Estilo para el número de página */
-.page-number {
+/* .page-number {
     font-size: 4rem;
     line-height: 4.2rem;
-}
+} */
 
-.page-number--tens {
+/* .page-number--tens {
     align-self: flex-end;
 }
 
@@ -195,7 +197,7 @@ input[value="4"]:checked ~ * [data-scene="4"] {
     top: 0;
     left: 0.5em;
     transform: translateY(calc((-100% * (var(--scene) / var(--total) - 1 / var(--total)))));
-}
+} */ 
 
 /* Estilo para el contenido izquierdo */
 .left-content {
@@ -206,8 +208,8 @@ input[value="4"]:checked ~ * [data-scene="4"] {
 /* Estilo para el contenido derecho */
 .right-content {
     color: rgb(0, 0, 0);
-    grid-row: 2 / 4;
-    grid-column: 3 / -1;
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
     overflow: auto;
 }
 
@@ -256,7 +258,7 @@ input[value="4"]:checked ~ * [data-scene="4"] {
 .hero {
     color: rgb(255, 255, 255);
     grid-row: 1 / 2;
-    grid-column: 3 / -1;
+    grid-column: 1 / -1;
 }
 
 .hero > .layer {
@@ -274,3 +276,4 @@ input[value="4"]:checked ~ * [data-scene="4"] {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(28, 2, 2);
 }
+

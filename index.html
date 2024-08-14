@@ -29,7 +29,7 @@
 			JavaScript
 		</div>
 	</div>
-	<div class="left-side">
+	<!-- <div class="left-side">
 		<div class="page-numbers" data-total='04'>
 			<div class="page-number page-number--tens">0</div>
 			<div class="page-number page-number--ones">
@@ -37,10 +37,9 @@
 				<div>2</div>
 				<div>3</div>
 				<div>4</div>
-                
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<div class="hero">
 		<nav class="slide-nav">
 			<div class="button-container">
@@ -52,7 +51,6 @@
 				<label class="nav-button" for="scene-2" data-scene="2">2</label>
 				<label class="nav-button" for="scene-3" data-scene="3">3</label>
 				<label class="nav-button" for="scene-4" data-scene="4">4</label>
-                
 			</div>
             
 		</nav>
@@ -60,9 +58,51 @@
 	<div class="right-content">
 		<div class="layer" data-scene="1">
 			<h2 class="heading">1. Variables con let, var y const</h2>
-			<p class="paragraph">
+			<!-- <p class="paragraph">
 				
-            </p>
+            </p> -->
+            <section>
+                <h3>Variables con <code>var</code></h3>
+                <p><strong>Inicialización y Declaración:</strong></p>
+                <ul>
+                    <li>No deben comenzar con un número.</li>
+                    <li>Se puede reescribir el valor de la variable después de su declaración.</li>
+                    <li>Puede ser de cualquier tipo de dato.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Variables con <code>const</code></h2>
+                <p><strong>Inmutabilidad:</strong></p>
+                <ul>
+                    <li>No se puede reescribir la variable; una vez asignado un valor, no puede ser cambiado.</li>
+                </ul>
+                <p><strong>Inicialización Obligatoria:</strong></p>
+                <ul>
+                    <li>Deben ser inicializadas al momento de la declaración.</li>
+                </ul>
+                <p><strong>Convenciones de Nomenclatura:</strong></p>
+                <ul>
+                    <li>Generalmente se escriben en mayúsculas (aunque esto es una convención y no una regla estricta).</li>
+                </ul>
+                <p><strong>Tipos de Dato:</strong></p>
+                <ul>
+                    <li>Pueden ser de cualquier tipo de dato.</li>
+                </ul>
+            </section>
+        
+            <section>
+                <h2>Variables con <code>let</code></h2>
+                <p><strong>Reescribibilidad:</strong></p>
+                <ul>
+                    <li>Permite reescribir el valor de la variable después de su declaración.</li>
+                </ul>
+                <p><strong>Similar a <code>var</code>:</strong></p>
+                <ul>
+                    <li>Se comporta de manera similar a <code>var</code>, pero con un alcance (scope) más limitado (local en bloques).</li>
+                </ul>
+            </section>
+        
+
 		</div>
 		<div class="layer" data-scene="2">
 			<h2 class="heading">2. Scope en JS</h2>
@@ -91,7 +131,7 @@
 
 <div class="footer">
     <div>
-        <p>&copy 2024; PetusoTwo</p>
+        <p>&copy 2024 PetusoTwo</p>
     </div>
 </div>
 </body>
